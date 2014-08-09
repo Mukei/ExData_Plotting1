@@ -38,7 +38,7 @@ datetime <- strptime(paste(df$Date, df$Time), "%d/%m/%Y %H:%M:%S")
 
 
 # Figure 4 ----------------------------------------------------------------
-print("Plotting data & saving plot3.png (480x480px)")
+print("Plotting data & saving plot4.png (480x480px)")
 png(filename = "./plot4.png",width = 480, height = 480, units = "px")
 # Create a 2x2 image plot
 par(mfrow = c(2,2))
