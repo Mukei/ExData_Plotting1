@@ -34,7 +34,6 @@ df <- read.table(pipe('grep "^[1-2]/2/2007" "household_power_consumption.txt"'),
 
 colnames(df) <-names(read.table('household_power_consumption.txt', header=TRUE,sep=";",nrows=1))
 
-df$dateValid <- as.Date(df$Date, "%d/%m/%Y")
 datetime <- strptime(paste(df$Date, df$Time), "%d/%m/%Y %H:%M:%S")
 
 
